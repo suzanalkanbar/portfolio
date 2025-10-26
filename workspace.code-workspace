@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../CMD/CMD portfolio/html"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Showcase_website"
+	}
+}
+

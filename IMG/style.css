@@ -1,0 +1,231 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/**containers*  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+#container{
+  display: flex;
+  height: 250mm;
+  width:100%;
+  display: grid;
+  grid-gap: 10px;
+}
+
+
+/**one**/
+.one
+{
+    background-color:#fef7ee;  
+}
+.name { 
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  float: left;
+  width: auto;
+  font-family: 'Belda';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 15px;
+}
+/**menu**/
+.menu{
+  position: absolute;
+  top: 17px;
+  right: 40px;
+  font-family: 'Belda';
+  font-size: 20px;
+  color: black;
+}
+
+li {
+  display: inline;
+  }
+  .menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+  }
+
+  /**tekst**/
+  .info{
+    font-family: 'belda';
+    font-weight: bold;
+    font-size: 25px;
+    width: 35%;
+    position:absolute;
+    top: 350px;
+    left: 200px;  
+    color: #1F3F4C;
+  }
+
+  /**mijn foto**/
+
+.shape {
+  position: absolute;
+  margin: 180px 52%;
+    width: 580px; 
+    height: 620px;
+    background: #B97C5E;
+    border-radius: 60% 40% 71% 29% / 47% 30% 70% 53%; 
+  }
+  .picture{
+    position: absolute;
+    margin: 65px 48%;
+    width: 750px; 
+  }
+
+  /**two**/
+ .section{
+    font-family: 'belda';
+    font-weight: bold;
+    font-size: 25px;
+    width: 35%;
+    position:absolute;
+    top: 130%;
+    right: 200px; 
+    color: #fef7ee;
+  }
+  .two
+  {
+      background-color:#1F3F4C;
+  }
+
+
+.pictures{
+  position: relative;
+  margin: 60px auto;
+  padding-top: 1px;
+  display:inline;
+  grid-gap: 0.5em;
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+}
+
+.foto1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 1px;
+  background-color: #884141;
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+
+.foto2{
+  position: absolute;
+  top: 0;
+  left: 440px;
+  background-color: #4a7757f5;
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+
+.foto3{
+  position: absolute;
+  top: 440px;
+  left: 440px;
+  background-color: #514a77f5;
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+
+.foto4{
+  position: absolute;
+  top: 440px;
+  left: 0;
+  background-color: #5d2258f5;
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+
+.pictures :hover{
+  opacity: .9;
+}
+
+.photoshop {
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  font-family: 'belda';
+  background-color: #fef7ee;
+  opacity: 0;
+}
+
+.pictures :hover .photoshop{
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  opacity: 1.0;
+}
+
+.illustrator {
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  font-family: 'belda';
+  background-color: #fef7ee;
+  opacity: 0;
+}
+.pictures :hover .photoshop{
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  opacity: 1.0;
+}
+
+.inDesign {
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  font-family: 'belda';
+  background-color: #fef7ee;
+  opacity: 0;
+}
+.pictures :hover .inDesign{
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  opacity: 1.0;
+}
+
+.digitaaltekenen{
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  font-family: 'belda';
+  background-color: #fef7ee;
+  opacity: 0;
+}
+.pictures :hover .digitaaltekenen{
+  position: absolute;
+  z-index: 100;
+  color: black;
+  margin: 40% 15%;
+  font-size:48px;
+  opacity: 1.0;
+}

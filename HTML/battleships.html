@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battleships</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style copy.css" />
+</head>
+
+<body class="ts-style">
+    <canvas id="bgCanvas"></canvas>
+
+    <main class="case-study">
+        <nav class="navBakkerijmuseum">
+            <ul class="menuBakkerijmuseum">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">MY WORK ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="projecten.html">UX/UI projecten</a></li>
+                        <li><a href="miniprojecten.html">Mini Projects</a></li>
+                        <li><a href="programeren.html">Programmeren</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+
+        <header class="ts-hero" style="background-image: url('../IMG/battelship.jpeg')">
+            <div class="ts-hero__inner">
+                <h1>Battleships Game</h1>
+                <p class="ts-hero__sub">Interactive JavaScript project</p>
+            </div>
+        </header>
+
+        <section class="project-overview">
+            <h2 class="intro">Introductie</h2>
+            <p>Dit Battleship spel heb ik ontwikkeld tijdens de minor <strong>Script voor Designers.</strong>
+                De opdracht richtte zich op het leren programmeren van interactieve ervaringen met <strong>HTML5
+                    Canvas</strong> en <strong>JavaScript</strong>.
+                Het spel bevat interactieve scheepsplaatsing, verschillende moeilijkheidsniveaus en dynamische animaties
+                voor treffers en missers.
+            </p>
+
+            <div id="controls" class="battle-controls">
+                <label for="difficulty">Choose difficulty:</label>
+                <select id="difficulty">
+                    <option value="beginner">Beginner</option>
+                    <option value="medium">Medium</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <button id="startGame">Start Game</button>
+            </div>
+
+            <div class="battlefield">
+                <canvas id="mySea" width="500" height="500"></canvas>
+                <canvas id="enemySea" width="500" height="500"></canvas>
+            </div>
+
+            <div id="hint" class="battle-hint">Place your first ship!</div>
+            <button id="flip" class="battle-btn">Flip the Ship</button>
+        </section>
+    </main>
+
+    <script src="../JS/Battleships.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hans Rosling Visualisatie</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="../JS/gapminderData.js"></script>
+</head>
+
+<body class="nieuwsbegrip-page">
+
+  <canvas id="bgCanvas"></canvas>
+  <h1 class="name">Suzan Alkanbar</h1>
+
+  <nav class="navBakkerijmuseum">
+    <ul class="menuBakkerijmuseum">
+      <li><a href="index.html">HOME</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-trigger">MIJN WERK ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="projecten.html">UX/UI projecten</a></li>
+          <li><a href="miniprojecten.html">Mini projecten</a></li>
+          <li><a href="programeren.html">Programmeren</a></li>
+        </ul>
+      </li>
+      <li><a href="aboutme.html">ABOUT ME</a></li>
+    </ul>
+  </nav>
+
+  <main class="case-study">
+    <header class="ts-hero" style="background-image: url('../IMG/Gapminder\ inspiratie.jpg');">
+      <div class="ts-hero__inner">
+        <h1>Hans Rosling Visualisatie</h1>
+        <p class="ts-hero__sub">Interactieve data-analyse (1800–2018)</p>
+      </div>
+    </header>
+
+    <section class="project-overview">
+      <h2 class="intro">Introductie</h2>
+      <p>
+        Dit project maakte ik tijdens mijn minor <strong>Script voor Designers</strong> aan de HAN.
+        Het doel was om een interactieve datavisualisatie te bouwen geïnspireerd door Hans Rosling’s beroemde
+        TED-talk over wereldgezondheid. In dit project programmeerde ik een animatie die de ontwikkeling van
+        landen in beeld brengt: aantal kinderen per vrouw, levensverwachting en bevolkingsomvang.
+      </p>
+
+      <div class="overview">
+        <div class="overview-block">
+          <h2>Context & Uitdaging</h2>
+          <p>
+            De uitdaging was het verwerken van een groot <strong>Gapminder-dataset</strong> en dit
+            visueel inzichtelijk maken via HTML5 Canvas en JavaScript. Ik leerde hoe je ruwe data omzet in
+            schaalbare grafieken en hoe animatie kan helpen om trends te laten zien.
+          </p>
+        </div>
+        <div class="overview-block">
+          <h2>Doel</h2>
+          <p>
+            Het bouwen van een dynamische grafiek die laat zien hoe landen zich ontwikkelden tussen 1800 en 2018.
+            De grafiek maakt gebruik van bubbels die levensverwachting, geboortecijfers en bevolkingsgrootte
+            weergeven.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ts-section ts-wave">
+      <h2>De Visualisatie</h2>
+
+      <canvas id="myCanvas" width="940" height="530"></canvas>
+
+      <div class="controls">
+        <button class="knop" onclick="startAnimation()">▶ Play</button>
+        <button class="knop" onclick="pauseAnimation()">⏸ Pause</button>
+        <button class="knop" onclick="restartAnimation()">⏮ Restart</button>
+      </div>
+
+      <div class="legend">
+        <h3>Kleuren legenda</h3>
+        <ul>
+          <li><span class="color-box africa"></span> Afrika</li>
+          <li><span class="color-box americas"></span> Amerika’s</li>
+          <li><span class="color-box asia"></span> Azië</li>
+          <li><span class="color-box europe"></span> Europa</li>
+        </ul>
+      </div>
+
+
+
+      <p style="text-align:center; margin-top: 1rem;">
+        De bubbels geven landen weer: de positie toont levensverwachting en geboortecijfers,
+        de grootte de bevolking en de kleur de regio. De animatie loopt van 1800 tot 2018.
+      </p>
+    </section>
+  </main>
+  <script src="../JS/script.js"></script>
+</body>
+
+</html>
