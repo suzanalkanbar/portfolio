@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../S4d/JS/Battleships"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Showcase_website"
+	}
+}
