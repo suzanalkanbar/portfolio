@@ -30,23 +30,23 @@ document.querySelectorAll('.dropdown > .dropdown-trigger').forEach(btn => {
 
 // cv download
 
-document.addEventListener("DOMContentLoaded", () => {
-    const cvButton = document.getElementById("downloadCV");
-    if (cvButton) {
-        cvButton.addEventListener("click", function (e) {
-            e.preventDefault();
-            const confirmDownload = confirm("Wil je mijn CV (PDF) downloaden?");
-            if (confirmDownload) {
-                const link = document.createElement("a");
-                link.href = "/CV.pdf";   // jouw bestand in de rootmap
-                link.download = "Suzan_Alkanbar_CV.pdf"; // naam bij het downloaden
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        });
-    }
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const cvButton = document.getElementById("downloadCV");
+//     if (cvButton) {
+//         cvButton.addEventListener("click", function (e) {
+//             e.preventDefault();
+//             const confirmDownload = confirm("Wil je mijn CV (PDF) downloaden?");
+//             if (confirmDownload) {
+//                 const link = document.createElement("a");
+//                 link.href = "/CV.pdf";   // jouw bestand in de rootmap
+//                 link.download = "Suzan_Alkanbar_CV.pdf"; // naam bij het downloaden
+//                 document.body.appendChild(link);
+//                 link.click();
+//                 document.body.removeChild(link);
+//             }
+//         });
+//     }
+// });
 
 const sections = document.querySelectorAll(".case-section, .cover");
 const navLinks = document.querySelectorAll(".sidebar-timeline a");
