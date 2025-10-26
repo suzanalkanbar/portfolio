@@ -80,7 +80,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../IMG/patron.jpg") center/cover no-repeat;
+  background: url("./IMG/patron.jpg") center/cover no-repeat;
   padding: 12px; /* dikte van de rand */
 }
 
@@ -2321,7 +2321,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../IMG/patron.jpg");
+  background-image: url("./IMG/patron.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 25px;     
