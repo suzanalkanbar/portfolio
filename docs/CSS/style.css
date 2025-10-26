@@ -1513,7 +1513,7 @@ li::marker {
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: url('../IMG/Bakkerijmuseum.webp') center/cover no-repeat;
+    background: url('./IMG/Bakkerijmuseum.webp') center/cover no-repeat;
   }
   
   
