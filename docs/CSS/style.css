@@ -26,9 +26,15 @@ html, body {
   outline: none;
 }
 
-header, nav, main, section {
+header, nav {
   position: relative;
   z-index: 100;
+  margin: 0;
+  padding: 0;
+}
+
+main, section {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -289,7 +295,7 @@ padding: 0;
   border-radius: 8px;
   padding: 10px 0;
   transform: translateY(8px);
-  z-index: 10000;
+  z-index: 10001;
   list-style: none;
 }
 
@@ -355,6 +361,7 @@ padding: 0;
   }
   .hero-right {
     flex: 1;
+
   }
   
   .intro {
@@ -2329,8 +2336,8 @@ canvas {
 }
 
 .about-image img {
-  width: 115%;
-  height: 115%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -2376,12 +2383,10 @@ canvas {
   .about-container {
     flex-direction: column;
     text-align: center;
+    gap: 2rem;            
+    width: 90%; 
   }
 
-  .about-image img {
-    width: 250px;
-    height: 250px;
-  }
 
   .about-content {
     padding: 0 1rem;
@@ -2389,7 +2394,14 @@ canvas {
 
   .about-buttons {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: .75rem;  }
+
+    .about-image {
+    width: min(320px, 80vw);
+    height: min(320px, 80vw);
   }
+
 }
 
 
@@ -2459,4 +2471,95 @@ canvas {
   gap: 1rem;
 }
 
+@media (max-width: 900px) {
+  .skills-grid {
+    width: 90%;
+    gap: 2rem;
+  }
+  .skills-column {
+    margin-left: 0;   
+    min-width: 220px; 
+    text-align: center; 
+  }
+  .contact-section p {
+    padding: 0 1rem;  
+  }
+}
+
+
+
+/* --- 1) Basis: laat alles schalen --- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { 
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem);
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- 2) Veilige breedte + padding voor de hele pagina --- */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: clamp(12px, 3vw, 32px);
+}
+
+/* --- 3) Projects grid schaalt vanzelf mee --- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(14px, 3vw, 28px);
+}
+
+/* Zorg dat kaarten en afbeeldingen mooi vullen */
+.project-card { display: block; border-radius: 16px; overflow: hidden; }
+.project-card img { width: 100%; height: auto; }
+
+/* --- 4) About-sectie en -image schalen mee --- */
+.about-section { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: clamp(16px, 4vw, 48px);
+  align-items: center;
+}
+
+.about-image {
+  width: clamp(220px, 35vw, 380px);
+  height: clamp(220px, 35vw, 380px);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  /* let op: pad vanuit CSS-bestand */
+  background-image: url("../IMG/patron.jpg");
+}
+
+/* --- 5) Navigatie: laat netjes afbreken op kleine schermen --- */
+nav ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(8px, 2vw, 18px);
+}
+
+/* --- 6) Media queries voor kleine schermen --- */
+@media (max-width: 1024px) {
+  .about-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .section-title { font-size: clamp(1.4rem, 3.5vw, 1.8rem); }
+  .name { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+  nav ul.menu { gap: 12px; }
+}
 
